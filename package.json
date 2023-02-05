@@ -14,6 +14,7 @@
     "lint": "eslint --cache .",
     "lint:fix": "nr lint --fix",
     "format": "prettier --cache --write .",
+    "ci": "ni && nr typecheck && nr lint && nr build",
     "typecheck": "tsc --noEmit",
     "typecheck:why": "tsc --noEmit --explainFiles > explainTypes.txt",
     "prepublishOnly": "pnpm run build"
