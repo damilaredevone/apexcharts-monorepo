@@ -1,38 +1,48 @@
 {
-  "name": "ts-plugin-starter",
+  "name": "@damilaredev/apexcharts-monorepo",
   "version": "0.0.0",
   "description": "TS Plugin Starter",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "type": "module",
   "private": false,
+  "sideEffects": false,
   "packageManager": "pnpm@7.26.3",
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
   "scripts": {
-    "typecheck": "tsc --noEmit",
-    "build": "pnpm typecheck && tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/**' run dev",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag",
+    "build": "pnpm -r --filter='./packages/**' run build",
     "watch": "pnpm run build -- --watch src",
-    "prepublishOnly": "pnpm run build",
-    "release": "bumpp --commit --push --tag && npm publish --access=public"
+    "lint": "eslint --cache .",
+    "lint:fix": "nr lint --fix",
+    "format": "prettier --cache --write .",
+    "typecheck": "tsc --noEmit",
+    "typecheck:why": "tsc --noEmit --explainFiles > explainTypes.txt",
+    "prepublishOnly": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damilaredevone/ts-plugin-starter.git"
+    "url": "git+https://github.com/damilaredevone/apexcharts-monorepo.git"
   },
   "author": "Damilare Anjorin",
   "license": "MIT",
-  "homepage": "https://github.com/damilaredevone/ts-plugin-starter#readme",
+  "homepage": "https://github.com/damilaredevone/apexcharts-monorepo#readme",
   "devDependencies": {
+    "@antfu/ni": "^0.19.0",
+    "@damilaredev/eslint-config-typescript": "^0.0.17",
     "@damilaredev/tsconfig": "1.5.2",
+    "@nuxt/kit": "^3.1.2",
     "@types/node": "18.11.18",
     "bumpp": "8.2.1",
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3",
     "tsup": "6.5.0",
     "typescript": "4.9.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "rollup": "^2.79.1"
+    },
+    "requiredScripts": [
+      "build"
+    ]
   }
 }
