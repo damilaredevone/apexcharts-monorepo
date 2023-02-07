@@ -1,6 +1,6 @@
 import ApexChartsVue from '@damilaredev/apexcharts-vue'
+import { defineNuxtPlugin } from '#app'
 
-// @ts-expect-error need to include type definitions
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('Message', ApexChartsVue)
 })

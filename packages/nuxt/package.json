@@ -29,7 +29,8 @@
   "scripts": {
     "build": "nuxt-module-build",
     "prepack": "pnpm build",
-    "dev": "tsup --watch"
+    "dev": "nuxi dev playground",
+    "prepare": "nuxi prepare playground"
   },
   "dependencies": {
     "@damilaredev/apexcharts-vue": "workspace:*"
