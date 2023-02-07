@@ -1,5 +1,12 @@
-import { addComponent, createResolver, defineNuxtModule, isNuxt2 } from '@nuxt/kit'
+import {
+  addComponent,
+  createResolver,
+  defineNuxtModule,
+  findPath,
+  isNuxt2,
+} from '@nuxt/kit'
 import ApexChartsVue from '@damilaredev/apexcharts-vue'
+import type { Arrayable } from 'vitest'
 import { version, name } from '../package.json'
 
 export default defineNuxtModule({
@@ -14,6 +21,24 @@ export default defineNuxtModule({
   },
   async setup(moduleOptions, nuxt) {
     const { resolve } = createResolver(import.meta.url)
+
+    const configPaths: Array<string> = []
+
+    const addConfigPath = async (path: Arrayable<string>) => {
+      // filter in case an empty path is provided
+      const paths = (Array.isArray(path) ? path : [path]).filter(Boolean)
+      for (const path of paths) {
+        const resolvedPath = await findPath(
+          path,
+          { extensions: ['.js', '.cjs', '.mjs', '.ts'] },
+          'file',
+        )
+        // only if the path is found
+        if (resolvedPath) {
+          configPaths.push(resolvedPath)
+        }
+      }
+    }
 
     addComponent({
       name: 'ApexChartsVue', // name of the component to be used in vue templates
