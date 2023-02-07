@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/**' run dev",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag",
-    "build": "pnpm -r --filter='./packages/**' run build",
+    "build": "nr typecheck && pnpm -r --filter='./packages/**' run build",
     "watch": "pnpm run build -- --watch src",
     "lint": "eslint --cache .",
     "lint:fix": "nr lint --fix",

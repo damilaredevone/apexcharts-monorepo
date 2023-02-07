@@ -4,13 +4,13 @@ import pkg from './package.json'
 
 export default defineConfig({
   entry: ['./src/index.ts'],
-  format: ['cjs', 'esm', 'iife'],
+  format: ['cjs', 'esm'],
   target: 'node14',
   outDir: 'dist',
+  sourcemap: true,
   clean: true,
   dts: true,
   treeshake: true,
-  platform: 'browser',
   external: [...Object.keys(pkg.peerDependencies || {})],
   // plugins: [vuePlugin({ target: 'browser' })],
   async onSuccess() {

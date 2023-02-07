@@ -8,6 +8,7 @@ export default defineConfig({
   target: 'node14',
   outDir: 'dist',
   clean: true,
+  sourcemap: true,
   dts: true,
   treeshake: true,
   platform: 'browser',

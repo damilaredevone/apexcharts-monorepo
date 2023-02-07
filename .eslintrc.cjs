@@ -23,16 +23,20 @@ module.exports = {
     ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-extra-semi': 'off',
     'no-useless-constructor': 'warn',
     'space-before-function-paren': 'off',
     'no-console': 'off',
+    '@typescript-eslint/no-shadow': 'off',
+    'import/named': 'off',
   },
   overrides: [
     {
       // enable the rule specifically for TypeScript files
       files: ['*.ts', '*.mts', '*.cts', '*.tsx'],
       rules: {
-        '@typescript-eslint/explicit-function-return-type': 'error',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/indent': 'off',
       },
     },
   ],
