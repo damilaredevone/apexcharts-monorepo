@@ -72,8 +72,11 @@ importers:
   packages/nuxt:
     specifiers:
       '@damilaredev/apexcharts-vue': workspace:*
+      nuxt: ^3.1.1
     dependencies:
       '@damilaredev/apexcharts-vue': link:../vue
+    devDependencies:
+      nuxt: 3.1.2
 
   packages/vue:
     specifiers:
