@@ -3,13 +3,15 @@ import {
   createResolver,
   defineNuxtModule,
   findPath,
-  isNuxt2,
 } from '@nuxt/kit'
-import ApexChartsVue from '@damilaredev/apexcharts-vue'
-import type { Arrayable } from 'vitest'
+import type { NuxtModule } from '@nuxt/schema'
 import { version, name } from '../package.json'
 
-export default defineNuxtModule({
+type Arrayable<T> = T | T[]
+
+export type ModuleOptions = Record<string, any>
+
+const config: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
   meta: {
     name,
     version,
@@ -19,6 +21,7 @@ export default defineNuxtModule({
       bridge: true,
     },
   },
+  defaults: (nuxt) => ({}),
   async setup(moduleOptions, nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
@@ -41,11 +44,11 @@ export default defineNuxtModule({
     }
 
     addComponent({
-      name: 'ApexChartsVue', // name of the component to be used in vue templates
-      export: 'ApexChartsVue', // (optional) if the component is a named (rather than default) export
-      // filePath should be package name or resolved path
-      // if the component is created locally, preferably in `runtime` dir
-      filePath: '@damilaredev/apexcharts-vue', // resolve(runtimeDir, 'components', 'MyComponent.vue')
+      name: 'ApexChartsVue',
+      export: 'ApexChartsVue',
+      filePath: '@damilaredev/apexcharts-vue',
     })
   },
 })
+
+export default config

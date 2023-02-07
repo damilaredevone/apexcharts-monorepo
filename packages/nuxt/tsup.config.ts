@@ -1,3 +1,4 @@
+import { builtinModules } from 'module'
 import { defineConfig } from 'tsup'
 import vuePlugin from 'rollup-plugin-vue'
 import pkg from './package.json'
@@ -12,6 +13,7 @@ export default defineConfig({
   dts: true,
   treeshake: true,
   external: [
+    ...builtinModules,
     ...Object.keys(pkg.peerDependencies || {}),
     ...Object.keys(pkg.dependencies || {}),
   ],

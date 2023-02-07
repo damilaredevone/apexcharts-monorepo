@@ -1,7 +1,7 @@
 {
   "name": "@damilaredev/apexcharts-monorepo",
   "version": "0.0.0",
-  "description": "TS Plugin Starter",
+  "description": "Apex Charts Monorepo",
   "type": "module",
   "private": false,
   "sideEffects": false,
@@ -10,6 +10,7 @@
     "dev": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/**' run dev",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag",
     "build": "nr typecheck && pnpm -r --filter='./packages/**' run build",
+    "build:nuxt": "nr typecheck && pnpm -r --filter='./packages/nuxt' run build",
     "watch": "pnpm run build -- --watch src",
     "lint": "eslint --cache .",
     "lint:fix": "nr lint --fix",
@@ -28,11 +29,13 @@
   "author": "Damilare Anjorin",
   "license": "MIT",
   "homepage": "https://github.com/damilaredevone/apexcharts-monorepo#readme",
+  "dependencies": {
+    "@nuxt/kit": "^3.1.2"
+  },
   "devDependencies": {
     "@antfu/ni": "^0.19.0",
     "@damilaredev/eslint-config-typescript": "^0.0.17",
     "@damilaredev/tsconfig": "1.5.2",
-    "@nuxt/kit": "^3.1.2",
     "@types/jest": "^29.4.0",
     "@types/node": "18.11.19",
     "@vue/compiler-sfc": "^3.2.47",
@@ -46,12 +49,14 @@
     "typescript": "4.9.5",
     "vite": "^4.1.1",
     "vitest": "^0.28.4",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "@nuxt/module-builder": "latest",
+    "@nuxt/test-utils": "^3.1.1",
+    "nuxt": "^3.1.1"
   },
   "pnpm": {
     "overrides": {
-      "rollup": "^2.79.1",
-      "@nuxt/kit": "^3.1.1"
+      "nuxt": "^3.1.1"
     },
     "requiredScripts": [
       "build"
