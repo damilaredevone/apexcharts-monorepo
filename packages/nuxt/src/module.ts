@@ -44,12 +44,12 @@ const config: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
     }
 
     addComponent({
-      name: 'ApexCharts',
-      export: 'ApexCharts',
+      name: 'ApexChartsVue',
+      export: 'ApexChartsVue',
       filePath: '@damilaredev/apexcharts-vue',
     })
 
-    addPlugin(resolve('runtime/plugin.ts'))
+    // addPlugin(resolve('runtime/plugin.ts'))
   },
 })
 

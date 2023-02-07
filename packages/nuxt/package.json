@@ -27,7 +27,7 @@
     "package.json"
   ],
   "scripts": {
-    "build": "nuxt-module-build",
+    "build": "pnpm prepare && nuxt-module-build",
     "prepack": "pnpm build",
     "dev": "nuxi dev playground",
     "prepare": "nuxi prepare playground"
