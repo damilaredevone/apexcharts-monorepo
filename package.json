@@ -8,9 +8,11 @@
   "packageManager": "pnpm@7.26.3",
   "scripts": {
     "dev": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/**' run dev",
+    "dev:examples": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./examples/**' run dev",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag",
     "build": "nr typecheck && pnpm -r --filter='./packages/**' run build",
     "build:nuxt": "nr typecheck && pnpm -r --filter='./packages/nuxt' run build",
+    "build:vue": "nr typecheck && pnpm -r --filter='./packages/vue' run build",
     "watch": "pnpm run build -- --watch src",
     "lint": "eslint --cache .",
     "lint:fix": "nr lint --fix",
@@ -35,6 +37,8 @@
   "devDependencies": {
     "@antfu/ni": "^0.19.0",
     "@damilaredev/eslint-config-typescript": "^0.0.17",
+    "@damilaredev/apexcharts-vue": "workspace:*",
+    "@damilaredev/apexcharts-nuxt": "workspace:*",
     "@damilaredev/tsconfig": "1.5.2",
     "@types/jest": "^29.4.0",
     "@types/node": "18.11.19",

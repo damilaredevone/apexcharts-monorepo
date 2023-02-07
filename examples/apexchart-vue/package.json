@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "vue": "^3.2.45",
-    "@damilaredev/apexcharts-vue": "workspace:*"
+    "@damilaredev/apexcharts-vue": "workspace:*",
+    "apexcharts": "3.37.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

@@ -1,5 +1,6 @@
 import {
   addComponent,
+  addPlugin,
   createResolver,
   defineNuxtModule,
   findPath,
@@ -7,8 +8,7 @@ import {
 import type { NuxtModule } from '@nuxt/schema'
 import { version, name } from '../package.json'
 
-type Arrayable<T> = T | T[]
-
+export type Arrayable<T> = T | T[]
 export type ModuleOptions = Record<string, any>
 
 const config: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
@@ -44,10 +44,12 @@ const config: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
     }
 
     addComponent({
-      name: 'ApexChartsVue',
-      export: 'ApexChartsVue',
+      name: 'ApexCharts',
+      export: 'ApexCharts',
       filePath: '@damilaredev/apexcharts-vue',
     })
+
+    addPlugin(resolve('runtime/plugin.ts'))
   },
 })
 

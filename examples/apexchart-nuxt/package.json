@@ -2,12 +2,14 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev -p 49922",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@damilaredev/apexcharts-nuxt": "workspace:*",
+    "apexcharts": "3.37.0",
     "nuxt": "^3.1.2"
   }
 }
