@@ -16,6 +16,8 @@
     "format": "prettier --cache --write .",
     "ci": "ni && nr typecheck && nr lint && nr build",
     "typecheck": "tsc --noEmit",
+    "test": "vitest --run",
+    "test:all": "CI=true pnpm -r --stream run test --allowOnly",
     "typecheck:why": "tsc --noEmit --explainFiles > explainTypes.txt",
     "prepublishOnly": "pnpm run build"
   },
@@ -48,7 +50,8 @@
   },
   "pnpm": {
     "overrides": {
-      "rollup": "^2.79.1"
+      "rollup": "^2.79.1",
+      "@nuxt/kit": "^3.1.1"
     },
     "requiredScripts": [
       "build"
