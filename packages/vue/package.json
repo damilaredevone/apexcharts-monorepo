@@ -13,15 +13,15 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "types": "./dist/ApexCharts.d.ts",
+      "import": "./dist/ApexCharts.js",
+      "require": "./dist/ApexCharts.js"
     },
     "./*": "./*"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/ApexCharts.js",
+  "module": "./dist/ApexCharts.js",
+  "types": "./dist/ApexCharts.d.ts",
   "files": [
     "dist",
     "package.json"

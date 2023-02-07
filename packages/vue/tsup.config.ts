@@ -3,7 +3,7 @@ import vuePlugin from 'rollup-plugin-vue'
 import pkg from './package.json'
 
 export default defineConfig({
-  entry: ['./src/index.ts'],
+  entry: ['./src/ApexCharts.ts'],
   format: ['cjs', 'esm'],
   target: 'node14',
   outDir: 'dist',
@@ -11,7 +11,10 @@ export default defineConfig({
   clean: true,
   dts: true,
   treeshake: true,
-  external: [...Object.keys(pkg.peerDependencies || {})],
+  external: [
+    ...Object.keys(pkg.peerDependencies || {}),
+    ...Object.keys(pkg.dependencies || {}),
+  ],
   // plugins: [vuePlugin({ target: 'browser' })],
   async onSuccess() {
     console.log('Done...')

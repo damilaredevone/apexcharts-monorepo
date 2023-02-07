@@ -11,7 +11,10 @@ export default defineConfig({
   sourcemap: true,
   dts: true,
   treeshake: true,
-  external: [...Object.keys(pkg.peerDependencies || {})],
+  external: [
+    ...Object.keys(pkg.peerDependencies || {}),
+    ...Object.keys(pkg.dependencies || {}),
+  ],
   // plugins: [vuePlugin({ target: 'browser' })],
   async onSuccess() {
     console.log('Done...')
