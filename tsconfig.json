@@ -1,6 +1,23 @@
 {
     "extends": "@damilaredev/tsconfig/tsconfig.node.json",
-    "compilerOptions": {},
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist"]
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "types": [
+            "vitest/globals",
+            "vite/client",
+            "jest",
+            "node"
+        ],
+        "paths": {
+            "@damilaredev/apexcharts-nuxt": ["./packages/nuxt/src/index.ts"],
+            "@damilaredev/apexcharts-vue": ["./packages/vue/src/index.ts"],
+        }
+    },
+    "exclude": [
+        "**/dist/**",
+        "./examples/**/*.*",
+        "./packages/nuxt/dist/**",
+        "./packages/vue/dist/**",
+    ]
 }

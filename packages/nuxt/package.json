@@ -29,5 +29,16 @@
       "scripts": {
         "build": "pnpm ci && tsup",
         "dev": "tsup --watch"
+      },
+      "dependencies": {
+        "@damilaredev/apexcharts-vue": "workspace:*"
+      },
+      "peerDependencies": {
+        "nuxt": "^3"
+      },
+      "peerDependenciesMeta": {
+        "nuxt": {
+          "optional": false
+        }
       }
 }

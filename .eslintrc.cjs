@@ -25,6 +25,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'no-useless-constructor': 'warn',
     'space-before-function-paren': 'off',
+    'no-console': 'off',
   },
   overrides: [
     {

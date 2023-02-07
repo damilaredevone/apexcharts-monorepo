@@ -29,5 +29,14 @@
       "scripts": {
         "build": "pnpm ci && tsup",
         "dev": "tsup --watch"
+      },
+      "peerDependencies": {
+        "apexcharts": "^3",
+        "vue": "^3"
+      },
+      "peerDependenciesMeta": {
+        "apexcharts": {
+          "optional": false
+        }
       }
 }
