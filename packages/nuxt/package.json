@@ -2,6 +2,7 @@
   "name": "@damilaredev/apexcharts-nuxt",
   "version": "0.0.1",
   "description": "Nuxt 3 ApexCharts Module",
+  "license": "MIT",
   "type": "module",
   "packageManager": "pnpm@7.27.0",
   "engines": {
