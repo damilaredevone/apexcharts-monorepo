@@ -1,6 +1,6 @@
 {
   "name": "@damilaredev/apexcharts-vue",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Vue 3 ApexCharts",
   "type": "module",
   "packageManager": "pnpm@7.27.0",
