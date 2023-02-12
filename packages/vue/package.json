@@ -29,11 +29,15 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
+    "*.d.ts",
+    "*.mjs",
+    "*.cjs",
     "package.json"
   ],
   "scripts": {
     "build": "vue-tsc --noEmit && tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "@damilaredev/utils": "^0.5.0"

@@ -30,7 +30,8 @@
     "build": "pnpm prepare && nuxt-module-build",
     "prepack": "pnpm build",
     "dev": "nuxi dev playground",
-    "prepare": "nuxi prepare playground"
+    "prepare": "nuxi prepare playground",
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "@damilaredev/apexcharts-vue": "workspace:*"
