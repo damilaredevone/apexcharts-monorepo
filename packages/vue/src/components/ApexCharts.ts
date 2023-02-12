@@ -14,7 +14,7 @@ import {
 } from 'vue'
 import type { ApexOptions } from 'apexcharts'
 import ApexCharts from 'apexcharts'
-import { extend } from './utils'
+import { extend } from '../utils'
 
 const events = [
   'animationEnd',

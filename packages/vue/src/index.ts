@@ -1,4 +1,10 @@
-import ApexChartsVue from './ApexCharts'
-export * from './utils'
+import type { App } from 'vue'
+import ApexChartsComponent from './components/ApexCharts'
 
-export { ApexChartsVue }
+const ApexChartsVue = {
+  install: (app: App): void => {
+    app.component('ApexChartsVue', ApexChartsComponent)
+  },
+}
+
+export default ApexChartsVue

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import ApexChartsVue from '@damilaredev/apexcharts-vue'
 
 const getRandomInt = (): number => Math.floor(Math.random() * (50 - 5 + 1)) + 5
 

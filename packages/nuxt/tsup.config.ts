@@ -1,6 +1,5 @@
 import { builtinModules } from 'module'
 import { defineConfig } from 'tsup'
-import vuePlugin from 'rollup-plugin-vue'
 import pkg from './package.json'
 
 export default defineConfig({
@@ -17,7 +16,6 @@ export default defineConfig({
     ...Object.keys(pkg.peerDependencies || {}),
     ...Object.keys(pkg.dependencies || {}),
   ],
-  // plugins: [vuePlugin({ target: 'browser' })],
   async onSuccess() {
     console.log('Done...')
   },
