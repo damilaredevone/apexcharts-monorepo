@@ -38,7 +38,7 @@ const events = [
   'scrolled',
 ]
 
-const ApexChartsVue = defineComponent({
+const ApexChartsComponent = defineComponent({
   name: 'ApexChart',
   props: {
     options: {
@@ -278,4 +278,4 @@ const ApexChartsVue = defineComponent({
   },
 })
 
-export default ApexChartsVue
+export default ApexChartsComponent

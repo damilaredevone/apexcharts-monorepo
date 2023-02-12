@@ -14,7 +14,6 @@ export default defineConfig({
   external: [
     ...builtinModules,
     ...Object.keys(pkg.peerDependencies || {}),
-    'apexcharts',
     ...Object.keys(pkg.dependencies || {}),
   ],
   async onSuccess() {

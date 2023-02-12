@@ -4,11 +4,6 @@ import pkg from './package.json'
 
 export default defineBuildConfig({
   rollup: { emitCJS: true },
-  externals: [
-    ...builtinModules,
-    ...Object.keys(pkg.peerDependencies || {}),
-    'apexcharts',
-    ...Object.keys(pkg.dependencies || {}),
-  ],
+  externals: [...builtinModules, ...Object.keys(pkg.peerDependencies || {})],
   failOnWarn: false,
 })
