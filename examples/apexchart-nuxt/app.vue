@@ -136,29 +136,30 @@ const graphOpts = computed(() => {
 
 <template>
   <div>
-    dami
-    <apex-charts
-      type="area"
-      height="250"
-      :options="graphOpts"
-      :series="[
-        {
-          data: [
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-          ],
-        },
-      ]"
-    />
+    <client-only>
+      <apex-charts
+        type="area"
+        height="250"
+        :options="graphOpts"
+        :series="[
+          {
+            data: [
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+              getRandomInt(),
+            ],
+          },
+        ]"
+      />
+    </client-only>
   </div>
 </template>

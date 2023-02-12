@@ -8,7 +8,8 @@
   "packageManager": "pnpm@7.27.0",
   "scripts": {
     "dev": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/**' run dev",
-    "dev:examples": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./examples/**' --filter='./packages/nuxt' run dev",
+    "nuxt:dev": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/nuxt' run dev",
+    "dev:examples": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./examples/**' run dev",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
     "build": "pnpm -r --filter='./packages/**' run build",
     "build:nuxt": "nr typecheck && pnpm -r --filter='./packages/nuxt' run build",
@@ -32,7 +33,7 @@
   "license": "MIT",
   "homepage": "https://github.com/damilaredevone/apexcharts-monorepo#readme",
   "dependencies": {
-    "@nuxt/kit": "^3.1.2"
+    "@nuxt/kit": "^3.2.0"
   },
   "devDependencies": {
     "@antfu/ni": "^0.19.0",
@@ -43,7 +44,6 @@
     "@types/jest": "^29.4.0",
     "@types/node": "18.13.0",
     "@vue/compiler-sfc": "^3.2.47",
-    "apexcharts": "^3.37.0",
     "bumpp": "8.2.1",
     "eslint": "^8.33.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -56,11 +56,11 @@
     "vue": "^3.2.47",
     "@nuxt/module-builder": "latest",
     "@nuxt/test-utils": "^3.1.1",
-    "nuxt": "^3.1.1"
+    "nuxt": "^3.2.0"
   },
   "pnpm": {
     "overrides": {
-      "nuxt": "^3.1.1"
+      "nuxt": "^3.2.0"
     },
     "requiredScripts": [
       "build"

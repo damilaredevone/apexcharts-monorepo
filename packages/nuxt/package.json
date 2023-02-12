@@ -21,10 +21,10 @@
     "./*": "./*"
   },
   "main": "./dist/module.cjs",
-  "module": "./dist/module.mjs",
   "types": "./dist/types.d.ts",
   "files": [
     "dist",
+    "*.d.ts",
     "package.json"
   ],
   "scripts": {
@@ -39,8 +39,9 @@
   },
   "devDependencies": {
     "@nuxt/schema": "^3.1.2",
-    "nuxt": "^3.1.2",
-    "typescript": "^4.9.5"
+    "nuxt": "^3.2.0",
+    "typescript": "^4.9.5",
+    "apexcharts": "^3.37.0"
   },
   "peerDependencies": {
     "nuxt": ">=3",

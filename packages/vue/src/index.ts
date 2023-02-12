@@ -3,7 +3,7 @@ import ApexChartsComponent from './components/ApexCharts'
 
 const ApexChartsVue = {
   install: (app: App): void => {
-    app.component('ApexChartsVue', ApexChartsComponent)
+    app.component('ApexCharts', ApexChartsComponent)
   },
 }
 

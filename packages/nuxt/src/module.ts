@@ -9,9 +9,9 @@ import type { NuxtModule } from '@nuxt/schema'
 import { version, name } from '../package.json'
 
 export type Arrayable<T> = T | T[]
-export type ModuleOptions = Record<string, any>
+export type ModuleOptions = {}
 
-const config: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
+const config: any = defineNuxtModule<ModuleOptions>({
   meta: {
     name,
     version,
@@ -43,7 +43,9 @@ const config: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
       }
     }
 
-    addPlugin(resolve('./runtime/plugin.ts'))
+    addPlugin({ src: resolve('./runtime/plugin'), mode: 'client' })
+
+    // addPlugin(resolve('./runtime/plugin.client'))
   },
 })
 

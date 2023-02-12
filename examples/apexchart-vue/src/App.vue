@@ -136,7 +136,7 @@ const graphOpts = computed(() => {
 
 <template>
   <div>
-    <apex-charts-vue
+    <apex-charts
       type="area"
       height="250"
       :options="graphOpts"
