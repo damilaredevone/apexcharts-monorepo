@@ -7,6 +7,7 @@ export default defineBuildConfig({
   externals: [
     ...builtinModules,
     ...Object.keys(pkg.peerDependencies || {}),
+    'apexcharts',
     ...Object.keys(pkg.dependencies || {}),
   ],
   failOnWarn: false,

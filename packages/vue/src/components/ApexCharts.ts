@@ -43,7 +43,7 @@ const ApexChartsVue = defineComponent({
   props: {
     options: {
       type: Object as PropType<ApexOptions>,
-      default: () => ({}),
+      default: () => ({} as ApexOptions),
     },
     type: {
       type: String as PropType<Pick<ApexChart, 'type'>>,

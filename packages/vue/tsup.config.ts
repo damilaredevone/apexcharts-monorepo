@@ -3,7 +3,7 @@ import { defineConfig } from 'tsup'
 import pkg from './package.json'
 
 export default defineConfig({
-  entry: ['./src/index.ts', './src/components/index.ts'],
+  entry: ['./src/index.ts'],
   format: ['cjs', 'esm'],
   target: 'node14',
   outDir: 'dist',
@@ -14,6 +14,7 @@ export default defineConfig({
   external: [
     ...builtinModules,
     ...Object.keys(pkg.peerDependencies || {}),
+    'apexcharts',
     ...Object.keys(pkg.dependencies || {}),
   ],
   async onSuccess() {
