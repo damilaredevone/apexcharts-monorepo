@@ -41,7 +41,7 @@
     "prepublishOnly": "pnpm build"
   },
   "dependencies": {
-    "@damilaredev/utils": "^0.5.0"
+    "@damilaredev/utils": "^0.6.0"
   },
   "devDependencies": {
     "vue-tsc": "^1.0.24",
