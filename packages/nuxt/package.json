@@ -41,10 +41,14 @@
     "typescript": "^4.9.5"
   },
   "peerDependencies": {
-    "nuxt": ">=3"
+    "nuxt": ">=3",
+    "apexcharts": "^3"
   },
   "peerDependenciesMeta": {
     "nuxt": {
+      "optional": false
+    },
+    "apexcharts": {
       "optional": false
     }
   }
