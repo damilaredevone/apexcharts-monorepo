@@ -1,6 +1,6 @@
 {
   "name": "@damilaredev/apexcharts-nuxt",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Nuxt 3 ApexCharts Module",
   "license": "MIT",
   "type": "module",

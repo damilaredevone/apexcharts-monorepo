@@ -1,6 +1,6 @@
 {
   "name": "@damilaredev/apexcharts-monorepo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Apex Charts Monorepo",
   "type": "module",
   "private": true,
