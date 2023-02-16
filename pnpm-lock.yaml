@@ -24,7 +24,7 @@ importers:
       nuxt: ^3.2.0
       prettier: ^2.8.3
       rollup-plugin-vue: ^6.0.0
-      tsup: 6.6.2
+      tsup: 6.6.3
       typescript: 4.9.5
       vite: ^4.1.1
       vitest: ^0.28.4
@@ -48,7 +48,7 @@ importers:
       nuxt: 3.2.0_ro2j4hdvo3sm7g2kzstaywt3mi
       prettier: 2.8.3
       rollup-plugin-vue: 6.0.0_@vue+compiler-sfc@3.2.47
-      tsup: 6.6.2_typescript@4.9.5
+      tsup: 6.6.3_typescript@4.9.5
       typescript: 4.9.5
       vite: 4.1.1_@types+node@18.13.0
       vitest: 0.28.4
@@ -2405,7 +2405,7 @@ packages:
       defu: 6.1.2
       dotenv: 16.0.3
       giget: 1.0.0
-      jiti: 1.16.2
+      jiti: 1.17.0
       mlly: 1.1.0
       pathe: 1.1.0
       pkg-types: 1.0.1
@@ -4529,6 +4529,7 @@ packages:
   /jiti/1.16.2:
     resolution: {integrity: sha512-OKBOVWmU3FxDt/UH4zSwiKPuc1nihFZiOD722FuJlngvLz2glX1v2/TJIgoA4+mrpnXxHV6dSAoCvPcYQtoG5A==}
     hasBin: true
+    dev: true
 
   /jiti/1.17.0:
     resolution: {integrity: sha512-CByzPgFqYoB9odEeef7GNmQ3S5THIBOtzRYoSCya2Sv27AuQxy2jgoFjQ6VTF53xsq1MXRm+YWNvOoDHUAteOw==}
@@ -6892,9 +6893,9 @@ packages:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: true
 
-  /tsup/6.6.2_typescript@4.9.5:
-    resolution: {integrity: sha512-+yQ6SI4rVtp1+YpcYOePumJLEVQ896CDNRt9dJ2L/DeMnLf1+FTOCVw5eioLBH0xLdHgogO9NQ6vPNF5MfkSJw==}
-    engines: {node: '>=14'}
+  /tsup/6.6.3_typescript@4.9.5:
+    resolution: {integrity: sha512-OLx/jFllYlVeZQ7sCHBuRVEQBBa1tFbouoc/gbYakyipjVQdWy/iQOvmExUA/ewap9iQ7tbJf9pW0PgcEFfJcQ==}
+    engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
       '@swc/core': ^1
