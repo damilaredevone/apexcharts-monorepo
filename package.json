@@ -42,7 +42,7 @@
     "@damilaredev/apexcharts-nuxt": "workspace:*",
     "@damilaredev/tsconfig": "1.5.2",
     "@types/jest": "^29.4.0",
-    "@types/node": "18.13.0",
+    "@types/node": "18.14.0",
     "@vue/compiler-sfc": "^3.2.47",
     "bumpp": "8.2.1",
     "eslint": "^8.33.0",
