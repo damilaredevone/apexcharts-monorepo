@@ -44,7 +44,7 @@
     "@types/jest": "^29.4.0",
     "@types/node": "18.14.1",
     "@vue/compiler-sfc": "^3.2.47",
-    "bumpp": "8.2.1",
+    "bumpp": "9.0.0",
     "eslint": "^8.33.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.3",
