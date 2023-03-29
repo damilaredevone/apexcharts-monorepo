@@ -7,7 +7,7 @@ importers:
 
   .:
     specifiers:
-      '@antfu/ni': ^0.20.0
+      '@antfu/ni': ^0.21.0
       '@damilaredev/apexcharts-nuxt': workspace:*
       '@damilaredev/apexcharts-vue': workspace:*
       '@damilaredev/eslint-config-typescript': ^0.0.18
@@ -32,7 +32,7 @@ importers:
     dependencies:
       '@nuxt/kit': 3.2.0
     devDependencies:
-      '@antfu/ni': 0.20.0
+      '@antfu/ni': 0.21.2
       '@damilaredev/apexcharts-nuxt': link:packages/nuxt
       '@damilaredev/apexcharts-vue': link:packages/vue
       '@damilaredev/eslint-config-typescript': 0.0.18_4vsywjlpuriuw3tl5oq6zy5a64
@@ -121,8 +121,8 @@ packages:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.17
 
-  /@antfu/ni/0.20.0:
-    resolution: {integrity: sha512-mBgAuq2b0daSA/14LMyjEjaInD7/Zd7KVXZge7bQPKmtQJFqy9/pWBml6DMkMreeHQEomMtIbbeqReNJ/74kjA==}
+  /@antfu/ni/0.21.2:
+    resolution: {integrity: sha512-nzj1bnkUIYZt6ANeQzGXGUOeeJ9k/TDnfwaAE/ElxSKQxBjjJ+PQMcZfpAKKwRc1rE+PGJ8WRQBWRUrQn7Mnuw==}
     hasBin: true
     dev: true
 
