@@ -47,7 +47,7 @@
     "bumpp": "9.1.0",
     "eslint": "^8.33.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.3",
+    "prettier": "^3.0.0",
     "rollup-plugin-vue": "^6.0.0",
     "tsup": "7.1.0",
     "typescript": "5.0.4",
