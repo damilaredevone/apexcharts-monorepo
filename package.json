@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.0",
-    "@damilaredev/eslint-config-typescript": "^0.0.18",
+    "@damilaredev/eslint-config-typescript": "^0.0.19",
     "@damilaredev/apexcharts-vue": "workspace:*",
     "@damilaredev/apexcharts-nuxt": "workspace:*",
     "@damilaredev/tsconfig": "1.5.2",
