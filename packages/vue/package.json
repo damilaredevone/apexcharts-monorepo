@@ -46,10 +46,10 @@
   "devDependencies": {
     "vue-tsc": "^1.0.24",
     "typescript": "5.3.3",
-    "apexcharts": "^3.37.0"
+    "apexcharts": "^4.0.0"
   },
   "peerDependencies": {
-    "apexcharts": "^3",
+    "apexcharts": "^3 || ^4.0.0",
     "vue": "^3"
   },
   "peerDependenciesMeta": {
