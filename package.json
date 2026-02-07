@@ -45,7 +45,7 @@
     "@types/node": "20.10.5",
     "@vue/compiler-sfc": "^3.2.47",
     "bumpp": "9.2.1",
-    "eslint": "^8.33.0",
+    "eslint": "^10.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.0",
     "rollup-plugin-vue": "^6.0.0",
