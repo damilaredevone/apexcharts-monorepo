@@ -51,7 +51,7 @@
     "rollup-plugin-vue": "^6.0.0",
     "tsup": "8.0.1",
     "typescript": "5.3.3",
-    "vite": "^4.1.1",
+    "vite": "^6.0.0",
     "vitest": "^1.0.0",
     "vue": "^3.2.47",
     "@nuxt/module-builder": "latest",
