@@ -56,11 +56,11 @@
     "vue": "^3.2.47",
     "@nuxt/module-builder": "latest",
     "@nuxt/test-utils": "^3.1.1",
-    "nuxt": "^3.2.0"
+    "nuxt": "^4.0.0"
   },
   "pnpm": {
     "overrides": {
-      "nuxt": "^3.2.0"
+      "nuxt": "^4.0.0"
     },
     "requiredScripts": [
       "build"
